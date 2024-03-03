@@ -1,3 +1,4 @@
+import { Modal } from "bootstrap";
 import "./App.css";
 import Accordian from "./components";
 import TabTest from "./components/custom tabs/tab-test";
@@ -7,10 +8,12 @@ import LoadMoreData from "./components/load-more";
 import QRCodeGenerator from "./components/qr-code";
 
 import RandomColor from "./components/randomcolor";
-import ScrollIndicator from "./components/scroll-indicator";
+//import ScrollIndicator from "./components/scroll-indicator";
 import StarRating from "./components/star-rating";
 import Treeview from "./components/tree-view";
 import menus from "./components/tree-view/data";
+import ModalTest from "./components/custom-model-app/modal-test";
+import GithubProfileFinder from "./components/GithubProfileFinder";
 
 //const url = "https://jsonplaceholder.typicode.com/photos?_limit=10";
 function App() {
@@ -40,7 +43,12 @@ function App() {
       {/* Scroll indicator component*/}
       {/*<ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />*/}
       {/*custom tabs component*/}
-      <TabTest />
+      {/* <TabTest />*/}
+
+      {/* Custom Model Component */}
+      {/*<ModalTest />*/}
+      {/*Github Profile Finder*/}
+      <GithubProfileFinder />
     </div>
   );
 }
